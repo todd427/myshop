@@ -4,3 +4,4 @@ media/
 .gitignore
 .accountID
 .env
+__pycache__
