@@ -1,2 +1,5 @@
 products/
 media/
+.token
+.gitignore
+.accountID
