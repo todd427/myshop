@@ -3,3 +3,4 @@ media/
 .token
 .gitignore
 .accountID
+.env
