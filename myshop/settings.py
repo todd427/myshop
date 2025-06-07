@@ -36,6 +36,12 @@ STRIPE_API_VERSION = '2024-04-10'
 STRIPE_WEBHOOK_SECRET = config('STRIPE_WEBHOOK_SECRET')
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
+
 # Application definition
 
 INSTALLED_APPS = [
