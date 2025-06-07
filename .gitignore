@@ -5,3 +5,5 @@ media/
 .accountID
 .env
 __pycache__
+db.sqlite3
+
