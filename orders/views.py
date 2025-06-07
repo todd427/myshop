@@ -4,6 +4,27 @@ from .models import OrderItem, Order
 from .forms import OrderCreateForm
 from cart.cart import Cart
 from .tasks import order_created
+import weasyprint
+from django.contrib.staticfiles import finders
+from django.http import HttpResponse
+from django.template.loader import render_to_string
+from weasyprint.text.fonts import FontConfiguration
+
+@staff_member_required
+def admin_order_pdf(request, order_id):
+    order = get_object_or_404(Order, id=order_id)
+    html = render_to_string('orders/order/pdf.html', {'order': order})
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = f'filename=order_{order.id}.pdf'
+
+    font_config = FontConfiguration()
+    weasyprint.HTML(string=html).write_pdf(
+        response,
+        stylesheets=[weasyprint.CSS(finders.find('css/pdf.css'), font_config=font_config)],
+        font_config=font_config
+    )
+    return response
+
 
 def order_create(request):
     cart = Cart(request)
