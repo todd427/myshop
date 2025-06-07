@@ -41,6 +41,15 @@ def payment_process(request):
                     'quantity': item.quantity,
                 }
             )
+        if order.coupon:
+           stripe_coupon = stripe.Coupon.create(
+               percent_off=order.discount,
+               duration='once',
+               name=order.coupon.code
+           )
+           session_data['discounts'] = [{
+               'coupon': stripe_coupon.id,  
+           }]
 
         # create Stripe checkout session
         session = stripe.checkout.Session.create(**session_data)
