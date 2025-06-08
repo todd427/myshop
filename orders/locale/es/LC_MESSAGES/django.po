@@ -6,88 +6,90 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 16:51-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2025-06-08 12:26-0700\n"
+"PO-Revision-Date: 2025-06-07 17:38-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
-"1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 #: orders/models.py:10
 msgid "first name"
-msgstr ""
+msgstr "nombre"
 
 #: orders/models.py:11
 msgid "last name"
-msgstr ""
+msgstr "apellido"
 
 #: orders/models.py:12
 msgid "e-mail"
-msgstr ""
+msgstr "correo electrónico"
 
 #: orders/models.py:13
 msgid "address"
-msgstr ""
+msgstr "dirección"
 
 #: orders/models.py:14
 msgid "postal code"
-msgstr ""
+msgstr "código postal"
 
 #: orders/models.py:15
 msgid "city"
-msgstr ""
+msgstr "ciudad"
 
 #: orders/models.py:16
 msgid "created"
-msgstr ""
+msgstr "creado"
 
 #: orders/models.py:17
 msgid "updated"
-msgstr ""
+msgstr "actualizado"
 
 #: orders/models.py:18
 msgid "paid"
-msgstr ""
+msgstr "pagado"
 
 #: orders/models.py:19
 msgid "stripe id"
-msgstr ""
+msgstr "identificador de banda"
 
 #: orders/models.py:21
 msgid "discount"
-msgstr ""
+msgstr "descuento"
 
 #: orders/templates/orders/order/create.html:5
 #: orders/templates/orders/order/create.html:8
 msgid "Checkout"
-msgstr ""
+msgstr "Pagar"
 
 #: orders/templates/orders/order/create.html:10
 msgid "Your order"
-msgstr ""
+msgstr "Tu pedido"
 
 #: orders/templates/orders/order/create.html:20
 msgid "coupon"
-msgstr ""
+msgstr "cupón"
 
 #: orders/templates/orders/order/create.html:21
 msgid "off"
-msgstr ""
+msgstr "apagado"
 
 #: orders/templates/orders/order/create.html:26
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: orders/templates/orders/order/create.html:30
 msgid "Place order"
-msgstr ""
+msgstr "Realizar pedido"
 
 #: orders/urls.py:6
+#, fuzzy
+#| msgid "created"
 msgid "create/"
-msgstr ""
+msgstr "creado"

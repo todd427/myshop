@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-07 16:51-0700\n"
-"PO-Revision-Date: 2025-06-07 23:58+0000\n"
+"POT-Creation-Date: 2025-06-08 13:00-0700\n"
+"PO-Revision-Date: 2025-06-08 20:05+0000\n"
 "Last-Translator:   <todd@toddwriter.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -28,7 +28,6 @@ msgid "override"
 msgstr "invalidar"
 
 #: cart/templates/cart/detail.html:4 cart/templates/cart/detail.html:7
-#| msgid "Your cart"
 msgid "Your shopping cart"
 msgstr "Su cesta de la compra"
 
@@ -41,7 +40,6 @@ msgid "Product"
 msgstr "Producto"
 
 #: cart/templates/cart/detail.html:13
-#| msgid "quantity"
 msgid "Quantity"
 msgstr "Cantidad"
 
@@ -78,13 +76,17 @@ msgid "Total"
 msgstr "Total"
 
 #: cart/templates/cart/detail.html:76
-#: shop/templates/shop/product/detail.html:28
+#: shop/templates/shop/product/detail.html:29
 msgid "People who bought this also bought"
 msgstr "Quien compró esto también compró"
 
 #: cart/templates/cart/detail.html:88
 msgid "Apply a coupon"
 msgstr "cupón"
+
+#: cart/templates/cart/detail.html:92
+msgid "Apply"
+msgstr "Aplicar"
 
 #: cart/templates/cart/detail.html:96
 msgid "Continue shopping"
@@ -115,7 +117,6 @@ msgid "payment/"
 msgstr "pago/"
 
 #: myshop/urls.py:32
-#| msgid "coupon"
 msgid "coupons/"
 msgstr "cupón/"
 
@@ -135,11 +136,15 @@ msgstr "cancelado/"
 msgid "My shop"
 msgstr "Mi tienda"
 
-#: shop/templates/shop/base.html:17
+#: shop/templates/shop/base.html:16
+msgid "Language"
+msgstr "Idioma"
+
+#: shop/templates/shop/base.html:33
 msgid "Your cart"
 msgstr "Tu Carrito"
 
-#: shop/templates/shop/base.html:19
+#: shop/templates/shop/base.html:35
 #, python-format
 msgid ""
 "\n"
@@ -158,10 +163,22 @@ msgstr[1] ""
 "%(items)s artículos, $%(total)s\n"
 "        "
 
-#: shop/templates/shop/base.html:26
+#: shop/templates/shop/base.html:42
 msgid "Your cart is empty."
 msgstr "Tu carrito está vacío."
 
-#: shop/templates/shop/product/detail.html:21
+#: shop/templates/shop/product/detail.html:22
 msgid "Add to cart"
 msgstr "Añadir al carrito"
+
+#: shop/templates/shop/product/list.html:8
+msgid "Categories"
+msgstr "Categorías"
+
+#: shop/templates/shop/product/list.html:11
+msgid "All"
+msgstr "Todo"
+
+#: shop/templates/shop/product/list.html:22
+msgid "Products"
+msgstr "Producto"

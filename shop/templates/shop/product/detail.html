@@ -1,5 +1,5 @@
 {% extends "shop/base.html" %}
-{% load static i18n %}
+{% load static i18n l10n %}
 
 {% block title %}
   {{ product.name }}
@@ -14,12 +14,13 @@
         {{ product.category }}
       </a>
     </h2>
-    <p class="price">${{ product.price }}</p>
+    <p class="price">{% localize on %}${{ product.price }}{% endlocalize % } {% localize off %}</p>
     <form action="{% url "cart:cart_add" product.id %}" method="post">
       {{ cart_product_form }}
       {% csrf_token %}
+      <br>
       <input type="submit" value="{% trans "Add to cart" %}">
-    </form>
+   </form>
     <br>
     {{ product.description|linebreaks }}
 
